@@ -1,0 +1,156 @@
+@charset "UTF-8";
+body {
+  font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  color: #333333;
+}
+
+body a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .lg-only {
+    display: none !important;
+  }
+  header.global-header.lg {
+    display: none;
+  }
+  header.global-header.sm {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 10;
+    padding-left: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  header.global-header.sm a.logo {
+    display: inline-block;
+    color: #48587e;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    line-height: 60px;
+  }
+  header.global-header.sm a.logo:before, header.global-header.sm a.logo:after {
+    display: block;
+    content: "";
+    height: 2px;
+    background-color: #00BCD4;
+    position: absolute;
+    left: 0;
+  }
+  header.global-header.sm a.logo:before {
+    width: 70%;
+    bottom: 13px;
+  }
+  header.global-header.sm a.logo:after {
+    width: 75%;
+    bottom: 10px;
+  }
+  footer.global-footer.lg {
+    display: none;
+  }
+  footer.global-footer.sm {
+    width: 100%;
+    height: 60px;
+    background-color: #63708D;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 60px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    min-width: 1280px;
+  }
+  .sm-only {
+    display: none !important;
+  }
+  header.global-header.sm {
+    display: none;
+  }
+  header.global-header.lg {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 10;
+  }
+  header.global-header.lg .inner {
+    width: 1200px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  header.global-header.lg .inner a.logo {
+    display: inline-block;
+    color: #48587e;
+    font-weight: bold;
+    font-size: 35px;
+    position: relative;
+  }
+  header.global-header.lg .inner a.logo:before, header.global-header.lg .inner a.logo:after {
+    display: block;
+    content: "";
+    height: 2px;
+    background-color: #00BCD4;
+    position: absolute;
+    left: 0;
+  }
+  header.global-header.lg .inner a.logo:before {
+    width: 70%;
+    bottom: -3px;
+  }
+  header.global-header.lg .inner a.logo:after {
+    width: 75%;
+    bottom: -7px;
+  }
+  header.global-header.lg .inner ul li {
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 15px;
+  }
+  header.global-header.lg .inner ul li a {
+    color: #48587e;
+  }
+  header.global-header.lg .inner ul li:hover {
+    text-decoration: underline;
+  }
+  footer.global-footer.sm {
+    display: none;
+  }
+  footer.global-footer.lg {
+    width: 100%;
+    height: 100px;
+    background-color: #63708D;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 100px;
+  }
+}
