@@ -1,6 +1,7 @@
 (function(){
   document.addEventListener("DOMContentLoaded", function(){
     carousel();
+    loader();
 
     window.addEventListener("scroll", function () {
       videoScroll();
@@ -23,5 +24,11 @@
     video.style.left =  -window.pageXOffset + "px";
   }
 
+  function loader(){
+    const loader = document.getElementById("loader");
+    window.onload=function(){
+      loader.style.display = "none";
+    }
+  }
 
 }());
