@@ -1,7 +1,10 @@
 (function(){
   document.addEventListener("DOMContentLoaded", function(){
     carousel();
-    loader();
+
+    window.addEventListener('load', function(){
+      loader();
+    });
 
     window.addEventListener("scroll", function () {
       videoScroll();
@@ -26,9 +29,9 @@
 
   function loader(){
     const loader = document.getElementById("loader");
-    window.onload=function(){
-      loader.style.display = "none";
-    }
+    setTimeout(function(){
+      loader.classList.add("hidden");
+    }, 1500);
   }
 
 }());
