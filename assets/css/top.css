@@ -218,19 +218,6 @@
   .main-contents footer p.mail {
     margin-bottom: 20px;
   }
-  .main-contents footer p.mail:before {
-    display: inline-block;
-    content: "";
-    width: 15px;
-    height: 15px;
-    background-image: url("../images/svg/mail.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left top;
-    position: relative;
-    left: -5px;
-    top: 1px;
-  }
 }
 
 @media screen and (min-width: 769px) {
@@ -252,6 +239,69 @@
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+  }
+  section.video p.lg-only {
+    font-size: 65px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    opacity: 0;
+    letter-spacing: 0.3em;
+    -webkit-animation-name: fade1;
+            animation-name: fade1;
+    -webkit-animation-duration: 6.65s;
+            animation-duration: 6.65s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  @-webkit-keyframes fade1 {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate(-50%, -50%) scale(1);
+              transform: translate(-50%, -50%) scale(1);
+    }
+    30% {
+      opacity: 0.5;
+      -webkit-transform: translate(-50%, -50%) scale(1);
+              transform: translate(-50%, -50%) scale(1);
+    }
+    60% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0.9;
+      -webkit-transform: translate(-50%, -50%) scale(1.08);
+              transform: translate(-50%, -50%) scale(1.08);
+    }
+  }
+  @keyframes fade1 {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate(-50%, -50%) scale(1);
+              transform: translate(-50%, -50%) scale(1);
+    }
+    30% {
+      opacity: 0.5;
+      -webkit-transform: translate(-50%, -50%) scale(1);
+              transform: translate(-50%, -50%) scale(1);
+    }
+    60% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0.9;
+      -webkit-transform: translate(-50%, -50%) scale(1.08);
+              transform: translate(-50%, -50%) scale(1.08);
+    }
   }
   .main-contents {
     padding-top: 100vh;
@@ -450,18 +500,5 @@
   }
   .main-contents footer p.mail {
     margin-bottom: 20px;
-  }
-  .main-contents footer p.mail:before {
-    display: inline-block;
-    content: "";
-    width: 15px;
-    height: 15px;
-    background-image: url("../images/svg/mail.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left top;
-    position: relative;
-    left: -5px;
-    top: 1px;
   }
 }
