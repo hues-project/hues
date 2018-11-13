@@ -58,8 +58,11 @@
             transform: translate(-50%, -50%);
   }
   section.video p {
-    font-size: 30px;
-    color: white;
+    width: 125px;
+    height: 40px;
+    background-image: url("../images/svg/logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -337,8 +340,11 @@
             transform: translate(-50%, -50%);
   }
   section.video p {
-    font-size: 65px;
-    color: white;
+    width: 200px;
+    height: 65px;
+    background-image: url("../images/svg/logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
     left: 50%;
     top: 50%;
